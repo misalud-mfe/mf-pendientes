@@ -7,8 +7,10 @@ module.exports = {
     entry: "./src/index.js",
     devServer: {
         port: 3002,
+        host: "0.0.0.0",
         static: path.resolve(__dirname, "dist"),
         historyApiFallback: true,
+        allowedHosts: "all",
     },
     output: {
         publicPath: "auto",
